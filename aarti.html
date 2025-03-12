@@ -4,16 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 20px;
+            margin-top: 80px;
+        }
+
+        #about h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 15px auto;
+            padding: 10px;
+            border-radius: 5px;
+            background: #ffcc00;
+            color: black;
+            cursor: pointer;
+        }
+
+        /* Projects Section */
+        #projects {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 80px 20px;
+        }
+
+        .project {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 60%;
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        #contact h2 {
+            font-size: 2em;
+            color: #ffcc00;
+        }
+
+        #contact p {
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Aarti Salunkhe</a></li>
+                <li><a href="#contact">7900167301</a></li>
             </ul>
         </nav>
     </header>
@@ -21,27 +147,26 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my portfolio website. I am a passionate software engineer with experience in web development.</p>
-        <img src="https://github.com/jetsetjourney/my_image/blob/main/img.jpg?raw=true" alt="My Photo" id="profilePhoto" style="max-width: 300px; display: block; margin-top: 10px;">
+        <p>As a web developer, I specialize in building responsive, user-friendly websites and applications. My expertise includes HTML, CSS, JavaScript, and modern frameworks to create seamless digital experiences.</p>
+        <img src="https://github.com/jetsetjourney/my_image/blob/main/img.jpg?raw=true" alt="My Photo" id="profilePhoto">
         <label for="photoUpload">Upload your photo:</label>
         <input type="file" id="photoUpload" accept="image/*">
         <div id="photoPreview"></div>
     </section>
     
     <section id="projects">
-        <h2>Projects</h2>
+       
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+           
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+          
         </div>
     </section>
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: example@example.com</p>
+        <p>Email: aartisalunkhe@eng.rizvi.edu.in</p>
     </section>
     
     <script src="script.js"></script>
